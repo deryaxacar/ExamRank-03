@@ -18,8 +18,7 @@ int ft_putnbr(long num, int base)
     int count = 0;
     if (num > (base - 1))
         count += ft_putnbr(num / base, base);
-    count += write(1, &"0123456789abcdef"[num % base], 1);
-    return count;
+    return count + write(1, &"0123456789abcdef"[num % base], 1);
 }
 
 int ft_printf(const char *str, ...)
