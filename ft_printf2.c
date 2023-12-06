@@ -27,9 +27,9 @@ int ft_printf(const char *str, ...)
     va_list ptr;
     va_start(ptr, str);
     for (; *str; str++)
-	{
+    {
         if (*str == '%') 
-		{
+	{
             str++;
             if (*str == 's')
                 ft_putstr(va_arg(ptr, char*));
