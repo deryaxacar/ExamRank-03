@@ -1,7 +1,7 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-void put_str(char *str, int *count)
+void ft_putstr(char *str, int *count)
 {
     if (!str) str = "(null)";
     *count += write(1, str, strlen(str));
@@ -32,7 +32,7 @@ int ft_printf(const char *str, ...)
         {
             str++;
             if (*str == 's')
-                put_str(va_arg(ptr, char*), &count);
+                ft_putstr(va_arg(ptr, char*), &count);
             else if (*str == 'd')
                 count += ft_putnbr(va_arg(ptr, int), 10);
             else if (*str == 'x')
