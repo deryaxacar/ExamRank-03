@@ -1,13 +1,11 @@
 #include <stdarg.h>
 #include <unistd.h>
-#include <string.h>
 
 void	ft_putstr(char *str)
 {
 	if (!str) str = "(null)";
-	write(1, str, strlen(str));
+    	while (*str) write(1, str++, 1);
 }
-
 int ft_putnbr(long num, int base)
 {
     int count = 0;
