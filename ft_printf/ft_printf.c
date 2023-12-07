@@ -31,7 +31,7 @@ int ft_printf(const char *format, ...)
         {
             format++;
             if (*format == 's')
-                ft_putstr(va_arg(ptr, char*));
+                ft_putstr(va_arg(ptr, char *));
             else if (*format == 'd')
                 count += ft_putnbr(va_arg(ptr, int), 10);
             else if (*format == 'x')
