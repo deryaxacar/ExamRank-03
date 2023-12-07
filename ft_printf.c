@@ -38,9 +38,7 @@ int ft_printf(const char *str, ...)
                 count += ft_putnbr(va_arg(ptr, unsigned int), 16);
         }
         else
-        {
             count += write(1, str, 1);
-        }
         str++;
     }
     return (va_end(ptr), count);
