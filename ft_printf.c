@@ -27,7 +27,7 @@ int ft_printf(const char *str, ...)
     va_start(ptr, str);
     while (*str)
     {
-        if ((*format == '%') && *(format + 1))
+        if ((*str == '%') && *(str + 1))
         {
             str++;
             if (*str == 's')
