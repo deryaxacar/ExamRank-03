@@ -20,7 +20,7 @@ int ft_putnbr(long num, int base)
     return count;
 }
 
-int ft_printf(const char *str, ...)
+int ft_printf(const char *format, ...)
 {
     int count = 0;
     va_list ptr;
@@ -38,7 +38,7 @@ int ft_printf(const char *str, ...)
                 count += ft_putnbr(va_arg(ptr, unsigned int), 16);
         }
         else
-            count += write(1, str, 1);
+            count += write(1, format, 1);
         format++;
     }
     return (va_end(ptr), count);
