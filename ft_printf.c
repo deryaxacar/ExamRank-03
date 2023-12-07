@@ -46,6 +46,9 @@ int ft_printf(const char *format, ...)
 
 int main()
 {
-    ft_printf("Merhaba, %s! Sayi: %d, Hex: %x\n", "Dunya", 42, 42);
+	//ft_printf("%s\n", "toto");
+	//ft_printf("Magic %s is %d", "number", 42);
+	//ft_printf("Hexadecimal for %d is %x\n", 42, 42);
+	ft_printf("Merhaba, %s! Sayi: %d, Hex: %x\n", "Dunya", 42, 42);
     return 0;
 }
