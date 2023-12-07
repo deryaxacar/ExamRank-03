@@ -24,22 +24,22 @@ int ft_printf(const char *str, ...)
 {
     int count = 0;
     va_list ptr;
-    va_start(ptr, str);
-    while (*str)
+    va_start(ptr, format);
+    while (*format)
     {
-        if ((*str == '%') && *(str + 1))
+        if ((*format == '%') && *(format + 1))
         {
-            str++;
-            if (*str == 's')
+            format++;
+            if (*format == 's')
                 ft_putstr(va_arg(ptr, char*));
-            else if (*str == 'd')
+            else if (*format == 'd')
                 count += ft_putnbr(va_arg(ptr, int), 10);
-            else if (*str == 'x')
+            else if (*format == 'x')
                 count += ft_putnbr(va_arg(ptr, unsigned int), 16);
         }
         else
             count += write(1, str, 1);
-        str++;
+        format++;
     }
     return (va_end(ptr), count);
 }
