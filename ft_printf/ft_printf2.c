@@ -1,11 +1,14 @@
 #include <stdarg.h>
 #include <unistd.h>
+#include <stdio.h>
 #include <string.h>
 
-void	ft_putstr(char *str)
+int	ft_putstr(char *str)
 {
+          int count = 0;
 	if (!str) str = "(null)";
-	write(1, str, strlen(str));
+	count += write(1, str, strlen(str));
+          return count;
 }
 
 int ft_putnbr(long num, int base)
@@ -32,7 +35,7 @@ int ft_printf(const char *str, ...)
 	{
             str++;
             if (*str == 's')
-                ft_putstr(va_arg(ptr, char*));
+                count += ft_putstr(va_arg(ptr, char*));
             else if (*str == 'd')
                 count += ft_putnbr(va_arg(ptr, int), 10);
             else if (*str == 'x')
@@ -46,6 +49,11 @@ int ft_printf(const char *str, ...)
 
 int main()
 {
-    ft_printf("Merhaba, %s! Sayi: %d, Hex: %x\n", "Dunya", 42, 42);
-    return 0;
+          ft_printf("%d\n", ft_printf("%s\n", "deneme"));
+          printf("%d\n", printf("%s\n", "deneme"));
+          ft_printf("%d\n", ft_printf("%d\n", 16));
+          printf("%d\n", printf("%d\n", 16));
+          ft_printf("%d\n", ft_printf("%x\n", 42));
+          printf("%d\n", printf("%x\n", 42));
+          return 0;
 }
