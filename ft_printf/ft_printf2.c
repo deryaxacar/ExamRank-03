@@ -5,10 +5,10 @@
 
 int	ft_putstr(char *str)
 {
-          int count = 0;
+        int count = 0;
 	if (!str) str = "(null)";
 	count += write(1, str, strlen(str));
-          return count;
+        return count;
 }
 
 int ft_putnbr(long num, int base)
