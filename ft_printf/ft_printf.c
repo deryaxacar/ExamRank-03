@@ -8,7 +8,6 @@ int      ft_putstr(char *str)
           if(!str) str = "(null)";
           while(*str) count += write(1, str++, 1);
           return count;
-
 }
 
 int       ft_putnbr(long num, int base)
