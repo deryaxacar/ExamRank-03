@@ -47,7 +47,7 @@ int       ft_printf(const char *format, ...)
 int main()
 {
 	ft_printf("%d\n",ft_printf("%s\n", "toto"));
-    printf("%d\n",printf("%s\n", "toto"));
+    	printf("%d\n",printf("%s\n", "toto"));
 	ft_printf("%d\n",ft_printf("Magic %s is %d\n", "number", 42));
 	printf("%d\n",printf("Magic %s is %d\n", "number", 42));
 	ft_printf("%d\n",ft_printf("Hexadecimal for %d is %x\n", 42, 42));
