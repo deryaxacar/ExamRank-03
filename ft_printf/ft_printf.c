@@ -59,4 +59,4 @@ int main()
 	ft_printf("Merhaba, %s! Sayi: %d, Hex: %x\n", "Dunya", 42, 42);
     return 0;
 }
-//Rank 3'te geçmiyor
+//Rank 3'te geçmiyor.
