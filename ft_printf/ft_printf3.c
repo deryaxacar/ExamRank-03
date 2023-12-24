@@ -53,6 +53,7 @@ int main()
 	ft_printf("%d\n",ft_printf("Hexadecimal for %d is %x\n", 42, 42));
 	printf("%d\n",printf("Hexadecimal for %d is %x\n", 42, 42));
 	ft_printf("%d\n",ft_printf("Merhaba, %s! Sayi: %d, Hex: %x\n", "Dunya", 42, 42));
-    printf("%d\n",printf("Merhaba, %s! Sayi: %d, Hex: %x\n", "Dunya", 42, 42));
+    	printf("%d\n",printf("Merhaba, %s! Sayi: %d, Hex: %x\n", "Dunya", 42, 42));
     return 0;
 }
+//geçiyor mu denemedim.
