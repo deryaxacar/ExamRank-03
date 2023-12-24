@@ -1,3 +1,4 @@
+//Rank 3'te geçmiyor
 #include <stdarg.h>
 #include <unistd.h>
 //#include <stdio.h>
