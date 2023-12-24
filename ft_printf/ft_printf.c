@@ -1,4 +1,3 @@
-//Rank 3'te geçmiyor
 #include <stdarg.h>
 #include <unistd.h>
 //#include <stdio.h>
@@ -60,3 +59,4 @@ int main()
 	ft_printf("Merhaba, %s! Sayi: %d, Hex: %x\n", "Dunya", 42, 42);
     return 0;
 }
+//Rank 3'te geçmiyor
