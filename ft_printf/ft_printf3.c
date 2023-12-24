@@ -56,4 +56,4 @@ int main()
     	printf("%d\n",printf("Merhaba, %s! Sayi: %d, Hex: %x\n", "Dunya", 42, 42));
     return 0;
 }
-//geçiyor mu denemedim.
+//Rank 3'te geçiyor mu denemedim.
