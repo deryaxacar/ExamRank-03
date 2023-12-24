@@ -2,7 +2,7 @@
 #include <unistd.h>
 //#include <stdio.h>
 
-void    put_str(char *str, int *count)
+void    ft_putstr(char *str, int *count)
 {
     if(!str) str = "(null)";
     while(*str) *count += write(1, str++, 1);
@@ -32,7 +32,7 @@ int ft_printf(const char *format, ...)
         {
             format++;
             if(*format == 's')
-                put_str(va_arg(ptr, char *), &count);
+                ft_putstr(va_arg(ptr, char *), &count);
             else if(*format == 'd')
                 ft_putnbr((long long int)va_arg(ptr, int), 10, &count);
             else if(*format == 'x')
