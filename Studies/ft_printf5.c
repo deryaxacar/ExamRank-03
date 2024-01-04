@@ -47,6 +47,6 @@ int ft_printf(const char *format, ...)
 int main()
 {
 	ft_printf("%d\n", ft_printf("Merhaba, %s! Sayi: %d, Hex: %x\n", "Dunya", 0, -42));
-    printf("%d\n", printf("Merhaba, %s! Sayi: %d, Hex: %x\n", "Dunya", 0, -42));
-    return 0;
+	printf("%d\n", printf("Merhaba, %s! Sayi: %d, Hex: %x\n", "Dunya", 0, -42));
+	return 0;
 }
