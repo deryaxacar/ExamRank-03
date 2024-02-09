@@ -51,4 +51,4 @@ int ft_printf(const char *format, ...)
 //	printf("%d\n", printf("Merhaba, %s! Sayi: %d, Hex: %x\n", "Dunya", 0, -42));
 //	return 0;
 //}
-//Rank 2 de geçti.
+//Rank 3 de geçti.
