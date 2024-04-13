@@ -1,5 +1,4 @@
 ### Subject
-
 ...
 
 Assignment name  : ft_printf
@@ -31,4 +30,5 @@ call: ft_printf("Hexadecimal for %d is %x\n", 42, 42);
 out: Hexadecimal for 42 is 2a$
 
 Obs: Your function must not have memory leaks. Moulinette will test that.
+
 ...
