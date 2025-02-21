@@ -29,3 +29,10 @@ out: Hexadecimal for 42 is 2a$
 
 Obs: Your function must not have memory leaks. Moulinette will test that.
 ...
+
+```
+
+---
+
+<p align="center">© 2025 This project was created by Derya ACAR.</p>
+
